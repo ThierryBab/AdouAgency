@@ -4035,6 +4035,7 @@ html.no-csstransitions .s-hero__content {
     position: absolute;
     top: -7rem;
     left: calc(6vw + 1px);
+    color: white;
 }
 
 .s-about .horizontal-line::before {
