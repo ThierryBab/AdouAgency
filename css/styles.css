@@ -2910,8 +2910,8 @@ input::-moz-focus-inner {
     font-size: calc(var(--text-size) * 10);
     line-height: 1;
     letter-spacing: -0.02em;
-    color: var(--color-text);
-    opacity: .1;
+    color: white;
+    opacity: .4;
 }
 
 .section-title h3 {
@@ -2928,6 +2928,12 @@ input::-moz-focus-inner {
 .display-1 {
     font-size: var(--text-xxl);
     font-weight: 500;
+    line-height: var(--vspace-1_75);
+    margin-top: 0;
+}
+.display-2 {
+    font-size: var(--text-xxxl);
+    font-weight: 900;
     line-height: var(--vspace-1_75);
     margin-top: 0;
 }
