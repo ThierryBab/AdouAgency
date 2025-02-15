@@ -3486,7 +3486,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../Photos/Photo\ 2024-09-07\,\ 1\ 08\ 41\ PM.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3536,7 +3536,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content h1 {
-    font-size: 22rem;
+    font-size: 12rem;
     font-weight: 600;
     letter-spacing: -.04em;
     line-height: 1;
@@ -3821,7 +3821,7 @@ html.no-csstransitions .s-hero__content {
         max-width: 1000px;
     }
     .s-hero__content h1 {
-        font-size: 20rem;
+        font-size: 10rem;
     }
     .s-hero__content-about {
         font-size: 3.3rem;
@@ -3843,7 +3843,7 @@ html.no-csstransitions .s-hero__content {
         max-width: 800px;
     }
     .s-hero__content h1 {
-        font-size: 18rem;
+        font-size: 8rem;
     }
 }
 
@@ -3931,7 +3931,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 700px) {
     .s-hero__content h1 {
-        font-size: 16rem;
+        font-size: 6rem;
     }
     .s-hero__content-about {
         font-size: 2.8rem;
@@ -3943,7 +3943,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
-        font-size: 28vw;
+        font-size: 18vw;
     }
     .s-hero__content-about {
         padding-right: 15vw;
@@ -4057,7 +4057,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/about-photo.jpg);
+    background-image: url(../Photos/Photo\ 2024-09-07\,\ 1\ 07\ 51\ PM.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4697,13 +4697,13 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: var(--color-1);
+    background-color: var(--color-bg);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-2);
 }
 
 .s-contact__top .h6 {
-    color: black;
+    color: white;
     margin-top: 0;
     margin-bottom: var(--vspace-1);
 }
@@ -4760,6 +4760,7 @@ html.no-csstransitions .s-hero__content {
     padding-top: var(--vspace-2);
     padding-bottom: var(--vspace-4);
     color: white;
+    background-color: var(--color-bg);
 }
 
 .s-footer a {
@@ -4767,7 +4768,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-footer .h6 {
-    color: black;
+    color: white;
     margin-top: 0;
 }
 
@@ -4796,7 +4797,7 @@ html.no-csstransitions .s-hero__content {
     content: "";
     height: 1px;
     width: 33.333%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
     position: absolute;
     top: var(--vspace-0_25);
     left: var(--gutter-lg);
