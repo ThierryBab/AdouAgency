@@ -4061,10 +4061,11 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-about__photo-block {
     position: relative;
+    min-height: 400px;
 }
 
 .s-about__photo {
-    background-image: url(../Photos/Photo\ 2024-09-07\,\ 1\ 07\ 51\ PM.jpg);
+    background-image: url(../Photos/Photo\ 2024-09-07\,\ 1\ 08\ 14\ PM\(1\).jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
