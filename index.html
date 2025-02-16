@@ -52,7 +52,7 @@
 
         <div class="s-header__logo">
             <a href="index.html">
-                Adou Agency
+                APU
             </a>
         </div>
 
@@ -64,6 +64,7 @@
                     <li><a class="smoothscroll" href="#about" title="About">A Propos</a></li>
                     <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
                     <li><a class="smoothscroll" href="#portfolio" title="Works">Projets</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="Works">Contact</a></li>
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
 
@@ -103,7 +104,7 @@
                         <div class="s-hero__content-social">
                             <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                             <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/adouagency"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </div>
                     </footer>
                 </div>
@@ -476,33 +477,59 @@
 
     <!-- contact
     ================================================== 
+    -->
     <section class="s-contact">
-
-        <div class="row narrower s-contact__top h-text-center">
-            <div class="column">
-                <h3 class="h6">Get In Touch</h3>
-                <h1 class="display-1">
-                Have an idea or an epic project in mind? Talk to
-                us. Let us work together and make something great.
-                Shoot us a message at
+        <div class="row">
+            <div class="column large-6 w-900-stack" id="contact">
+                <h3 class="h6" style="color: var(--color-1);">Contactez-nous</h3>
+                <h1 class="display-2" data-aos="fade-up">
+                    Propulsez votre marque!
                 </h1>
-            </div>
-        </div> 
-
-        <div class="row h-text-center">
-            <div class="column">
-                <p class="s-contact__email">
-                    <a href="mailto:#0">hello@flare.com</a>
-                </p>
+                <p class="lead" data-aos="fade-up">
+                    Nous participons au développement digital de votre entreprise. Parlez-nous de votre projet dès aujourd’hui ou envoyez-nous un courriel à: adoustudio@gmail.com. Nous répondrons dans un délai de 24 heures.            </div>
+            <div class="column large-6 w-900-stack">
+                <form class="s-contact__form" action="/submit-form" method="POST" style="max-width: 500px; margin: 0 auto;">
+                    <div>
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Votre courriel</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="phone">Votre téléphone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Ex: +33 6 12 34 56 78" class="form-input">
+                    </div>
+                    <div>
+                        <label for="entreprise">Nom de l'entreprise</label>
+                        <input type="text" id="entreprise" name="entreprise" required class="form-input">
+                    </div>
+                    <div>
+                        <label>Budget</label>
+                        <div style="display: flex; gap: 15px;">
+                            <label><input type="radio" name="budget" value="5k-10k"> 5k - 10k</label>
+                            <label><input type="radio" name="budget" value="10k-25k"> 10k - 25k</label>
+                            <label><input type="radio" name="budget" value="25k-50k"> 25k - 50k</label>
+                            <label><input type="radio" name="budget" value="50k+"> 50k+</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message">Description du projet</label>
+                        <textarea id="message" name="message" required class="form-input"></textarea>                    
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn--small">Envoyer</button>
+                    </div>
+                </form>
             </div>
         </div>
 
-    </section> 
-    -->
+    </section> <!-- end s-contact -->
 
 
     <!-- footer
-    ================================================== -->
+    ==================================================
     <footer class="s-footer">
         <div class="row row-y-top">
 
@@ -545,10 +572,11 @@
                 <a class="smoothscroll" title="Back to Top" href="#top">
                     top
                 </a>
-            </div> <!-- end ss-go-top -->
+            </div>
 
         </div>
     </footer>
+    -->
     
 
     <!-- photoswipe background

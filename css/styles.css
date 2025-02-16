@@ -4735,6 +4735,48 @@ html.no-csstransitions .s-hero__content {
     border-bottom: 2px solid white;
 }
 
+/* Input Fields */
+.s-contact__form input[type="text"],
+.s-contact__form input[type="email"],
+.s-contact__form input[type="tel"],
+.s-contact__form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 50%;
+}
+
+/* Input Focus */
+.s-contact__form input[type="text"]:focus,
+.s-contact__form input[type="email"]:focus,
+.s-contact__form input[type="tel"]:focus,
+.s-contact__form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea Styling */
+.s-contact__form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Budget Radio Buttons */
+.s-contact__form div label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.s-contact__form div input[type="radio"] {
+    margin-right: 5px;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
