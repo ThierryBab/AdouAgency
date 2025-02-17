@@ -4097,8 +4097,8 @@ html.no-csstransitions .s-hero__content {
     font-size: var(--text-size);
     font-weight: 600;
     text-align: center;
-    color: white;
-    background-color: var(--color-1);
+    color: black;
+    background-color: white;
     height: var(--vspace-1_5);
     width: var(--vspace-1_5);
     line-height: var(--vspace-1_5);
@@ -5017,4 +5017,15 @@ html.no-csstransitions .s-hero__content {
     .ss-copyright {
         font-size: 1.4rem;
     }
+}
+#translate-btn {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 12px; /* Smaller font */
+    padding: 1px 8px; /* Smaller padding */
+    width: auto; /* Let it fit content */
+    height: auto; /* Let it fit content */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
