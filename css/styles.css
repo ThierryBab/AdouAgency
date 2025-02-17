@@ -2917,7 +2917,7 @@ input::-moz-focus-inner {
 .section-title h3 {
     z-index: 2;
     font-weight: 500;
-    color: var(--color-1);
+    color: white;
     padding-bottom: 2em;
     margin-top: 0;
     position: absolute;
@@ -3136,6 +3136,7 @@ input::-moz-focus-inner {
     border: none;
     padding: 0;
     outline: 0;
+    color: white;
 }
 
 .s-header__logo img {
@@ -3637,12 +3638,16 @@ input::-moz-focus-inner {
 .s-hero__video svg path {
     fill: white;
 }
+.s-hero__video svg path:hover,
+.s-hero__video svg path:focus {
+    fill: black;
+}
 
 .s-hero__video-link {
     display: block;
     height: 9.6rem;
     width: 9.6rem;
-    background-color: var(--color-1);
+    background-color: black;
     -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: white;
@@ -3652,7 +3657,7 @@ input::-moz-focus-inner {
 
 .s-hero__video-link:hover, 
 .s-hero__video-link:focus {
-    background-color: var(--color-gray-19);
+    background-color: white;
     outline: 0;
 }
 
@@ -4048,7 +4053,7 @@ html.no-csstransitions .s-hero__content {
     content: "";
     display: block;
     width: 1px;
-    background-color: var(--color-1-darker);
+    background-color: white;
     position: absolute;
     right: calc(50% + 1px);
     top: 0;
