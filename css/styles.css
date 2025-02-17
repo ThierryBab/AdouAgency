@@ -4813,9 +4813,9 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-footer {
     padding-top: var(--vspace-2);
-    padding-bottom: var(--vspace-4);
+    padding-bottom: auto;
     color: white;
-    background-color: var(--color-bg);
+    background-color: black;
 }
 
 .s-footer a {
