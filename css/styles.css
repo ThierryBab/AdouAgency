@@ -3620,6 +3620,24 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## hero video
  * ------------------------------------------------------------------- */
+/* Full-screen video styling */
+.s-hero__video-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures it covers the whole screen */
+    display: none; /* Initially hidden */
+    z-index: 999;
+}
+
+/* Show video when playing */
+.s-hero__video-element.active {
+    display: block;
+}
+
+/* Keep existing button styles */
 .s-hero__video {
     position: absolute;
     right: 10.4rem;
@@ -3630,7 +3648,6 @@ input::-moz-focus-inner {
     height: 1.4rem;
     width: 1.4rem;
     position: absolute;
-    -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     left: 50%;
     top: 50%;
@@ -3639,6 +3656,7 @@ input::-moz-focus-inner {
 .s-hero__video svg path {
     fill: white;
 }
+
 .s-hero__video svg path:hover,
 .s-hero__video svg path:focus {
     fill: black;
@@ -3649,7 +3667,6 @@ input::-moz-focus-inner {
     height: 9.6rem;
     width: 9.6rem;
     background-color: black;
-    -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: white;
     border-radius: 100%;

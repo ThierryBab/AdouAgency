@@ -113,11 +113,17 @@
         </div>
 
         <div class="s-hero__video">
-            <a class="s-hero__video-link" href="https://www.youtube.com/embed/P54GUq-u7Ls" data-lity="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
+            <a class="s-hero__video-link" href="#" onclick="openFullscreen()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21 12l-18 12v-24z"/>
+                </svg>
                 <span class="s-hero__video-text">Play Video</span>
             </a>
+            <video id="fullscreenVideo" class="s-hero__video-element">
+                <source src="Photos/Video 2025-02-14, 7 25 46 PM.mp4" type="video/mp4">
+            </video>
         </div>
+        
 
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
@@ -547,6 +553,21 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/translate.js"></script>
+    <script>
+        function openFullscreen() {
+    let video = document.getElementById("fullscreenVideo");
+    
+    video.classList.add("active"); // Show the video
+    video.play(); // Start playing
+
+    // Close video when clicked
+    video.addEventListener("click", function() {
+        video.pause();
+        video.classList.remove("active");
+    });
+}
+
+    </script>
 </body>
 
 </html>
