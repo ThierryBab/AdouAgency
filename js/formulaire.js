@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             hasError = true;
         }
         if (!phone) { errorMessage += "\n- Téléphone"; hasError = true; }
-        if (!entreprise) { errorMessage += "\n- Nom de l'entreprise"; hasError = true; }
-        if (!message) { errorMessage += "\n- Description du projet"; hasError = true; }
-        if (!budget) { errorMessage += "\n- Budget"; hasError = true; }
 
         if (hasError) {
             Swal.fire({
