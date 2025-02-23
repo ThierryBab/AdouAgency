@@ -419,7 +419,7 @@
                 <p class="lead" data-aos="fade-up">
                     Nous participons au développement digital de votre entreprise. Parlez-nous de votre projet dès aujourd’hui ou envoyez-nous un courriel à: adoustudio@gmail.com. Nous répondrons dans un délai de 24 heures.            </div>
             <div class="column large-6 w-900-stack" data-aos="fade-up">
-                <form class="s-contact__form" action="/submit-form" method="POST" style="max-width: 500px; margin: 0 auto;">
+                <form id="contactForm" class="s-contact__form" action="https://formspree.io/f/mvgznklj" method="POST" style="max-width: 500px; margin: 0 auto;" novalidate>
                     <div>
                         <label for="name">Nom complet</label>
                         <input type="text" id="name" name="name" required class="form-input">
@@ -439,7 +439,7 @@
                     <div>
                         <label>Budget</label>
                         <div style="display: flex; gap: 15px;">
-                            <label><input type="radio" name="budget" value="5k-10k"> 5k - 10k</label>
+                            <label><input type="radio" name="budget" value="5k-10k" required> 5k - 10k</label>
                             <label><input type="radio" name="budget" value="10k-25k"> 10k - 25k</label>
                             <label><input type="radio" name="budget" value="25k-50k"> 25k - 50k</label>
                             <label><input type="radio" name="budget" value="50k+"> 50k+</label>
@@ -553,21 +553,9 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/translate.js"></script>
-    <script>
-        function openFullscreen() {
-    let video = document.getElementById("fullscreenVideo");
-    
-    video.classList.add("active"); // Show the video
-    video.play(); // Start playing
-
-    // Close video when clicked
-    video.addEventListener("click", function() {
-        video.pause();
-        video.classList.remove("active");
-    });
-}
-
-    </script>
+    <script src="js/formulaire.js"></script>
+    <script src="js/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
