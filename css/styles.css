@@ -3501,11 +3501,11 @@ input::-moz-focus-inner {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 36.5vw;
+    left: 34.5vw;
     /* left: 0*/
 }
 
-.s-hero__bg::after {
+.s-hero__bg::after { 
     display: block;
     content: "";
     position: absolute;
@@ -3544,7 +3544,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content h1 {
-    font-size: 12rem;
+    font-size: 11rem;
     font-weight: 600;
     letter-spacing: -.04em;
     line-height: 1;
@@ -3575,6 +3575,7 @@ input::-moz-focus-inner {
     font-size: 3.6rem;
     line-height: 1.444;
     color: var(--color-white);
+    padding-top: 20px;
     padding-left: 3.6em;
     position: relative;
 }
@@ -4098,8 +4099,8 @@ html.no-csstransitions .s-hero__content {
     right: var(--gutter-lg);
     left: var(--gutter-lg);
     bottom: var(--vspace-1);
+    border-radius: 12px;
 }
-
 
 /* ------------------------------------------------------------------- 
  * ## about process
