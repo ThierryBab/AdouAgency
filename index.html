@@ -55,7 +55,7 @@
     <header class="s-header">
 
         <div class="s-header__logo">
-            <a href="index.html" style="font-family: 'Michroma', sans-serif; font-size: 15px;">
+            <a href="/" style="font-family: 'Michroma', sans-serif; font-size: 15px;">
                 AdouAgency
             </a>
         </div>
@@ -425,7 +425,7 @@
                 <p class="lead" data-aos="fade-up" style="font-family: 'Michroma', sans-serif;">
                     Boostez votre présence en ligne avec notre expertise digitale. Parlez-nous de votre projet dès aujourd’hui ou écrivez-nous à adoustudio@gmail.com. Réponse garantie sous 24 heures !            </div>
             <div class="column large-6 w-900-stack" data-aos="fade-up">
-                <form class="s-contact__form" action="/submit-form" method="POST" style="max-width: 500px; margin: 0 auto;">
+                <form id="contactForm" class="s-contact__form" action="https://formspree.io/f/mvgznklj" method="POST" style="max-width: 500px; margin: 0 auto;" novalidate>
                     <div>
                         <label for="name" style="font-family: 'Michroma', sans-serif;" >Nom complet</label>
                         <input type="text" id="name" name="name" required class="form-input">
@@ -559,21 +559,9 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/translate.js"></script>
-    <script>
-        function openFullscreen() {
-    let video = document.getElementById("fullscreenVideo");
-    
-    video.classList.add("active"); // Show the video
-    video.play(); // Start playing
-
-    // Close video when clicked
-    video.addEventListener("click", function() {
-        video.pause();
-        video.classList.remove("active");
-    });
-}
-
-    </script>
+    <script src="js/formulaire.js"></script>
+    <script src="js/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
