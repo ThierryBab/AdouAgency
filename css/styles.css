@@ -3492,8 +3492,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-    /* background-image: url(../Photos/Bug1.jpg);*/
-    background-image: url(../Photos/Photo\ 2024-09-07\,\ 1\ 08\ 41\ PM.jpg);
+    background-image: url(../Photos/Bug1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3501,8 +3500,7 @@ input::-moz-focus-inner {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 34.5vw;
-    /* left: 0*/
+        left: 0;
 }
 
 .s-hero__bg::after { 
