@@ -3579,6 +3579,30 @@ input::-moz-focus-inner {
     padding-left: 3.6em;
     position: relative;
 }
+.hero-text {
+    font-family: 'Michroma', sans-serif;
+}
+
+/* iPhone 12 and smaller (≤ 390px width) */
+@media (max-width: 390px) {
+    .hero-text {
+        font-size: 18px;
+    }
+}
+
+/* iPhone 13, 14 Pro Max (391px - 430px width) */
+@media (min-width: 391px) and (max-width: 430px) {
+    .hero-text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    #hero {
+        padding-top: 100px !important;
+    }
+}
+
+
 
 .s-hero__content-about::before {
     content: "";
