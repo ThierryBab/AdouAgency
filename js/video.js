@@ -30,13 +30,16 @@ function openFullscreen() {
     }
 
     function exitHandler() {
+        // Only pause and reset if we're not in fullscreen mode
         if (
             !document.fullscreenElement && 
             !document.webkitFullscreenElement &&
             !document.mozFullScreenElement &&
             !document.msFullscreenElement
         ) {
-            video.pause(); // Pause video
+            if (!video.paused) {
+                video.pause(); // Pause video if it's playing
+            }
             video.currentTime = 0; // Reset playback position
             video.classList.remove("active"); // Hide video
 
