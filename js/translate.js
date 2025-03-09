@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
                 document.querySelectorAll("[data-key]").forEach(el => {
                     const key = el.getAttribute("data-key");
-                    if (data[key]) el.textContent = data[key];
+                    if (data[key]) el.innerHTML = data[key]; // Use innerHTML to keep <br>
                 });
             })
             .catch(error => console.error("Error loading translations:", error));
