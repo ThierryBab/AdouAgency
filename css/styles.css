@@ -3643,22 +3643,6 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## hero video
  * ------------------------------------------------------------------- */
-/* Full-screen video styling */
-.s-hero__video-element {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Ensures it covers the whole screen */
-    display: none; /* Initially hidden */
-    z-index: 999;
-}
-
-/* Show video when playing */
-.s-hero__video-element.active {
-    display: block;
-}
 
 /* Keep existing button styles */
 .s-hero__video {
@@ -3712,8 +3696,22 @@ input::-moz-focus-inner {
 .s-hero__video-element.active {
     display: block;
 }
-
-
+.s-hero__video-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    z-index: 999;
+}
+video {
+    display: none; /* Hide video by default */
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+}
 
 /* ------------------------------------------------------------------- 
  * ## hero scroll
