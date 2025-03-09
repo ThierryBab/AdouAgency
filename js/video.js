@@ -4,10 +4,35 @@ function openFullscreen() {
     video.classList.add("active"); // Show the video
     video.play(); // Start playing
 
-    // Close video when clicked
-    video.addEventListener("click", function() {
-        video.pause(); // Pause the video
-        video.currentTime = 0; // Reset playback position
-        video.classList.remove("active"); // Hide the video
-    }, { once: true }); // Ensure the event runs only once per session
+    // Request fullscreen mode
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+    }
+
+    // Listen for fullscreen exit
+    document.addEventListener("fullscreenchange", exitHandler);
+    document.addEventListener("webkitfullscreenchange", exitHandler);
+    document.addEventListener("mozfullscreenchange", exitHandler);
+    document.addEventListener("MSFullscreenChange", exitHandler);
+
+    function exitHandler() {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement &&
+            !document.mozFullScreenElement && !document.msFullscreenElement) {
+            video.pause(); // Pause video
+            video.currentTime = 0; // Reset playback position
+            video.classList.remove("active"); // Hide video
+
+            // Remove event listeners to prevent stacking
+            document.removeEventListener("fullscreenchange", exitHandler);
+            document.removeEventListener("webkitfullscreenchange", exitHandler);
+            document.removeEventListener("mozfullscreenchange", exitHandler);
+            document.removeEventListener("MSFullscreenChange", exitHandler);
+        }
+    }
 }

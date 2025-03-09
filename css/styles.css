@@ -3705,6 +3705,14 @@ input::-moz-focus-inner {
 .s-hero__video-text {
     display: none;
 }
+.s-hero__video-element {
+    display: none;
+}
+
+.s-hero__video-element.active {
+    display: block;
+}
+
 
 
 /* ------------------------------------------------------------------- 
