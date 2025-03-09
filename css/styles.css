@@ -3999,7 +3999,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
-        font-size: 16vw;
+        font-size: 6.5rem;
     }
     .s-hero__content-about {
         padding-right: 15vw;
