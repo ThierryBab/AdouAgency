@@ -3589,9 +3589,9 @@ input::-moz-focus-inner {
 }
 
 /* iPhone 13, 14 Pro Max (391px - 430px width) */
-@media (min-width: 391px) and (max-width: 430px) {
+@media (min-width: 391px) and (max-width: 435px) {
     .hero-text {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 @media (max-width: 400px) {
