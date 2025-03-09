@@ -1,20 +1,14 @@
 function openFullscreen() {
     let video = document.getElementById("fullscreenVideo");
 
-    // Check if the user is on mobile
+    video.classList.add("active"); // Show video
+    video.play(); // Start playing
+
+    // Detect if mobile (iPhone, iPad, Android)
     let isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
 
-    if (isMobile) {
-        // Mobile: Native fullscreen (just play the video)
-        video.setAttribute("controls", "true"); // Enable default controls
-        video.removeAttribute("playsinline");   // Forces fullscreen on mobile
-        video.play();
-    } else {
-        // Desktop: Custom fullscreen behavior
-        video.classList.add("active"); // Show the video
-        video.play(); // Start playing
-
-        // Request fullscreen
+    if (!isMobile) {
+        // Desktop: Request fullscreen
         if (video.requestFullscreen) {
             video.requestFullscreen();
         } else if (video.mozRequestFullScreen) {
@@ -30,20 +24,28 @@ function openFullscreen() {
         document.addEventListener("webkitfullscreenchange", exitHandler);
         document.addEventListener("mozfullscreenchange", exitHandler);
         document.addEventListener("MSFullscreenChange", exitHandler);
+    } else {
+        // Mobile: Listen for pause event (when user exits fullscreen)
+        video.addEventListener("pause", exitHandler);
+    }
 
-        function exitHandler() {
-            if (!document.fullscreenElement && !document.webkitFullscreenElement &&
-                !document.mozFullScreenElement && !document.msFullscreenElement) {
-                video.pause(); // Pause video
-                video.currentTime = 0; // Reset playback position
-                video.classList.remove("active"); // Hide video
+    function exitHandler() {
+        if (
+            !document.fullscreenElement && 
+            !document.webkitFullscreenElement &&
+            !document.mozFullScreenElement &&
+            !document.msFullscreenElement
+        ) {
+            video.pause(); // Pause video
+            video.currentTime = 0; // Reset playback position
+            video.classList.remove("active"); // Hide video
 
-                // Remove event listeners to prevent stacking
-                document.removeEventListener("fullscreenchange", exitHandler);
-                document.removeEventListener("webkitfullscreenchange", exitHandler);
-                document.removeEventListener("mozfullscreenchange", exitHandler);
-                document.removeEventListener("MSFullscreenChange", exitHandler);
-            }
+            // Remove event listeners
+            document.removeEventListener("fullscreenchange", exitHandler);
+            document.removeEventListener("webkitfullscreenchange", exitHandler);
+            document.removeEventListener("mozfullscreenchange", exitHandler);
+            document.removeEventListener("MSFullscreenChange", exitHandler);
+            video.removeEventListener("pause", exitHandler);
         }
     }
 }
