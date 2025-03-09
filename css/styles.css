@@ -3551,21 +3551,6 @@ input::-moz-focus-inner {
     position: relative;
 }
 
-/* Adjust font size for smaller screens */
-@media screen and (max-width: 768px) {
-    .s-hero__content h1 {
-        font-size: 7rem; /* Smaller font size for tablets and below */
-    }
-}
-
-/* Adjust font size for very small screens (like mobile devices) */
-@media screen and (max-width: 480px) {
-    .s-hero__content h1 {
-        font-size: 5rem; /* Even smaller font size for mobile devices */
-    }
-}
-
-
 .s-hero__content h1::before {
     display: block;
     content: "";
@@ -4014,7 +3999,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
-        font-size: 18vw;
+        font-size: 16vw;
     }
     .s-hero__content-about {
         padding-right: 15vw;
