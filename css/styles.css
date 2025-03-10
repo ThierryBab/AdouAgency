@@ -3591,7 +3591,7 @@ input::-moz-focus-inner {
 /* iPhone 13, 14 Pro Max (391px - 430px width) */
 @media (min-width: 391px) and (max-width: 435px) {
     .hero-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 @media (max-width: 400px) {
@@ -3632,7 +3632,7 @@ input::-moz-focus-inner {
 
 .s-hero__content-social a:hover, 
 .s-hero__content-social a:focus {
-    color: var(--color-1-light);
+    color: var(--color-black);
 }
 
 .s-hero__content-social a:last-child {
