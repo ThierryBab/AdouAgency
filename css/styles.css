@@ -2455,10 +2455,21 @@ button.h-full-width {
     margin-right: 0;
 }
 
+.btn--small1, 
+button.btn--small {
+    font-size: 1.2rem;
+    --btn-height: calc(var(--vspace-btn) - var(--vspace-0_5));
+}
 .btn--small, 
 button.btn--small {
     font-size: 1.2rem;
     --btn-height: calc(var(--vspace-btn) - var(--vspace-0_5));
+    background-color: #0b0b0c; /* Ensure the background color doesn't change */
+    border-color: #0b0b0c;
+    cursor: default; /* Disable cursor change */
+    text-decoration: none; /* Prevent underlining on hover */
+    color: white;
+    width: 100%;
 }
 
 .btn--medium, 
@@ -3013,7 +3024,33 @@ input::-moz-focus-inner {
 .slick-slider .slick-dots li:hover button {
     background: var(--color-1);
 }
+/* Disable hover effect only for the .btn-contact */
+.btn-contact:hover {
+    background-color: #0b0b0c; /* Ensure the background color doesn't change */
+    border-color: #0b0b0c;
+    cursor: default; /* Disable cursor change */
+    text-decoration: none; /* Prevent underlining on hover */
+    color: white;
+}
 
+@media (max-width: 768px) {
+    /* Full-width button on mobile */
+    .btn-contact {
+        width: 100%; /* Full width on mobile */
+    }
+    .btn-contact:hover {
+    background-color: #0b0b0c; /* Ensure the background color doesn't change */
+    border-color: #0b0b0c;
+    cursor: default; /* Disable cursor change */
+    text-decoration: none; /* Prevent underlining on hover */
+    color: white;
+}
+}
+.form-input {
+    background-color: #0b0b0c; 
+    border: 0.2rem solid; 
+    border-color: #363a3f;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3168,6 +3205,8 @@ input::-moz-focus-inner {
 
 .s-header__nav a {
     color: var(--color-gray-8);
+    font-family: 'Michroma', sans-serif; 
+    font-size: 8px;
 }
 
 .s-header__nav a:hover, .s-header__nav a:focus {
@@ -3615,6 +3654,10 @@ input::-moz-focus-inner {
 
 .s-hero__content-about p {
     margin-bottom: var(--vspace-2);
+}
+.menu-link {
+    font-family: 'Michroma', sans-serif; 
+    font-size: 8px;
 }
 
 /* hero content social
