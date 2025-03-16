@@ -132,14 +132,14 @@
         </div>
 
         <div class="s-hero__video">
-            <a class="s-hero__video-link" onclick="openFullscreen()">
+            <a class="s-hero__video-link" href="#" onclick="openFullscreen(); return false;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M21 12l-18 12v-24z"/>
                 </svg>
                 <span class="s-hero__video-text">Play Video</span>
             </a>
             <video id="fullscreenVideo" class="s-hero__video-element">
-                <source src="Photos/Video 2025-02-14, 7 25 46 PM.mp4" type="video/mp4">
+                <source src="Photos/Video-2025-02-14.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -199,7 +199,6 @@
     </section>    
 
     <section id="portfolio" class="s-portfolio">
-
         <div class="row s-portfolio__top">
             <div class="column large-6 w-900-stack">
                 <div class="section-title" data-num="02" data-aos="fade-up">
@@ -209,15 +208,15 @@
             <div class="column large-6 w-900-stack">
                 <h1 class="display-1" data-aos="fade-up" style="font-family: 'Michroma', sans-serif;" data-key="photo.subtitle"></h1>
             </div>
-        </div> <!-- end s-portfolio__top-->        
-
+        </div> 
+    
         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
-
+            
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="Pics/Links/HELICO1.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img rel="preload" src="Pics/Links/HELICO1.jpg" loading="lazy">
+                            <img rel="preload" src="Pics/Links/HELICO1.jpg" loading="lazy" alt="Projet HELICO1">
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -228,12 +227,13 @@
                         <p>Projet fait pour XXX</p>
                     </div>
                 </div>
-            </div> <!-- end column -->
+            </div> 
+    
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="Pics/Links/HELICO2.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img rel="preload" src="Pics/Links/HELICO2.jpg" loading="lazy">
+                            <img rel="preload" src="Pics/Links/HELICO2.jpg" loading="lazy" alt="Projet HELICO2">
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -244,12 +244,13 @@
                         <p>Projet fait pour XXX</p>
                     </div>
                 </div>
-            </div> <!-- end column -->
+            </div> 
+    
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="Pics/Links/MAYBACH1.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img src="Pics/Links/MAYBACH1.jpg" loading="lazy">
+                            <img src="Pics/Links/MAYBACH1.jpg" loading="lazy" alt="Projet MAYBACH1">
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -260,12 +261,13 @@
                         <p>Projet fait pour XXX</p>
                     </div>
                 </div>
-            </div> <!-- end column -->
+            </div> 
+    
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="Pics/Links/MAYBACH2.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img src="Pics/Links/MAYBACH1.jpg" loading="lazy">
+                            <img src="Pics/Links/MAYBACH2.jpg" loading="lazy" alt="Projet MAYBACH2">
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -276,12 +278,13 @@
                         <p>Projet fait pour XXX</p>
                     </div>
                 </div>
-            </div> <!-- end column -->
+            </div> 
+    
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="Pics/Links/PETRONAS2.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img src="Pics/Links/PETRONAS2.jpg" loading="lazy">
+                            <img src="Pics/Links/PETRONAS2.jpg" loading="lazy" alt="Projet PETRONAS2">
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -293,11 +296,12 @@
                     </div>
                 </div>
             </div>
+    
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="Pics/Links/PETRONAS1.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img src="Pics/Links/PETRONAS2.jpg" loading="lazy">
+                            <img src="Pics/Links/PETRONAS1.jpg" loading="lazy" alt="Projet PETRONAS1">
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -309,11 +313,9 @@
                     </div>
                 </div>
             </div>
-
+    
         </div>
-
-    </section>
-
+    </section>    
     <!-- services
     ================================================== -->
     <section id="services" class="s-services">
@@ -448,12 +450,11 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/translate.js"></script>
-    <script src="js/video.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/jquery-3.2.1.min.js" defer></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/translate.js" defer></script>
+    <script src="js/video.js" defer></script>
 </body>
 
 </html>
